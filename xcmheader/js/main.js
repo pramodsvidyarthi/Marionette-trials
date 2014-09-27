@@ -1,0 +1,31 @@
+require.config({
+	baseUrl:"/js/",
+	paths:{
+		"jquery":"vendors/jquery/dist/jquery",
+		"backbone":"vendors/backbone/backbone",
+		"underscore":"vendors/underscore/underscore",
+		"marionette":"vendors/marionette/lib/backbone.marionette"
+	},
+	shim:{
+		backbone:{
+			deps:['jquery','underscore'],
+			exports:'Backbone'
+		},
+		marionette:{
+			deps:['backbone'],
+			exports:'Marionette'
+		},
+		jquery:{
+			exports:'$'
+		},
+		underscore:{
+			exports:'_'
+		}
+	}
+});
+
+require(['app','views/headerview'],function(app,headview){
+	app.start();
+	var header = new headview();
+	app.header.show(header);
+});

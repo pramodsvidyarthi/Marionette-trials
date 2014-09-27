@@ -1,0 +1,10 @@
+{
+	"name":"xcmheader",
+	"dependencies":{
+		"jquery":"*",
+		"backbone":"*",
+		"underscore":"*",
+		"requirejs":"*",
+		"marionette":"*"
+	}
+}

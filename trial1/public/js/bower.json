@@ -1,0 +1,10 @@
+{
+  "name": "marionette-test",
+  "dependencies": {
+    "jquery": "latest",
+    "backbone": "latest",
+    "underscore": "latest",
+    "marionette": "latest",
+    "json2": "*"
+  }
+}

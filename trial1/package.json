@@ -1,0 +1,8 @@
+{
+  "name": "marionette-test",
+  "dependencies": {
+    "body-parser": "^1.8.1",
+    "ejs": "*",
+    "express": "*"
+  }
+}
